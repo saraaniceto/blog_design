@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@font-face {font-family: "Messapia Bold"; src: url(fontes/Messapia-Bold.otf);}
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --cor1: #A189AD;
+    --cor2: #C5A7D4;
+    --cor3: #DDBBED;
+    --cor4: #E8C5FA;
+    --cor5: #4A5429;
+    --cor6: #92A15F;
+    --cor7: #DCEDA4;
+    --cor8: #E7EDD3;
+
+    --font-body: 'Golos Text', sans-serif;
+    --font-title: 'Messapia Bold', Arial, sans-serif;
+    
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    font-weight: 100;
+    font-size: 1.2em;
+    font-family: var(--font-body);
+    background-color: var(--cor8);
+
+}
+
+header{
+    background-image: radial-gradient(farthest-corner at 95% 95%, var(--cor2) 35%, var(--cor8) 100%);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header > h1{
+    font-family: var(--font-title);
+    color: var(--cor5);
+    font-size: 1.5em;
+    padding: 0px 10px 20px 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+header > p{
+    font-size: 0.9em;
+    color: var(--cor5);
+    max-width: 500px;
+    margin: auto;
+    padding: 0px 10px 20px 10px;
+}
+
+nav{
+    background-color: var(--cor7);
+    padding: 10px;
+}
+
+nav > a{
+    color: var(--cor5);
+    text-decoration: none;
+    font-family: 'Messapia Bold', sans-serif;
+    font-size: small;
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+
+nav > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor7);
+    transition-duration: 0.5s;
+}
+
+
+main{
+    min-width: 300px;
+    max-width: 800px;
+    padding: 20px 20px 40px 20px;
+    margin:auto;
+}
+
+main h1{
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 1em;
+    color: var(--cor5);
+    }
+
+main h2{
+    padding: 25px 0px 10px 0px;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: var(--cor5);
+}
+
+main p{
+    margin: 10px 0px;
+    text-indent: 15px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+aside{
+    background-image: radial-gradient(circle at 50% 55%, var(--cor8)20%, var(--cor4));
+    border-radius: 20px;
+    padding: 20px;    
+    max-width: 700px;
+    margin: 20px auto 0px auto;
+}
+
+aside p{
+    text-align: justify;
+    color: var(--cor5);
+}
+
+aside ul{
+    list-style-position: inside;
+    color: var(--cor5);
+    list-style-type: "\2737\00A0";
+    line-height: 1.5em;
+}
+
+aside li{
+    padding-bottom: 5px;
+}
+
+aside h3{
+    text-align: center;
+    color: var(--cor5);
+    background-color:var(--cor7);
+    font-weight: 900;
+    margin: -20px -20px 0px -20px;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+hr{
+    margin: 40px 100px 0px 100px;
+    border: 1px solid var(--cor6);
+}
+
+footer{
+    background-color: var(--cor1);
+    color: var(--cor5);
+    padding: 10px;
+    text-align: center;
+    font-size: small;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+
+footer a:hover{
+    color: var(--cor4);
+}
